@@ -21,7 +21,7 @@ pipeline {
          steps {
              script{
                 sh 'npm i'
-                sh 'npm run sonar'
+                sh './script/sonar.sh'
     }
       
         }
