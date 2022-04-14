@@ -25,7 +25,7 @@ pipeline {
              script{
                 sh 'npm i'
                 sh 'chmod 777 ./script/sonar.sh'
-                sh './script/sonar.sh'
+                
     }
       
         }
