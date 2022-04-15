@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ssh ubuntu@13.126.216.165<<EOF
+ssh ubuntu@13.233.15.171<<EOF
     cd ~/node-app
     git pull origin master
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
