@@ -8,7 +8,7 @@ ssh -tt ubuntu@18.169.189.7<<EOF
     nvm install v12.4.0
     npm install
     npm install pm2 -g
-    pm2 restart ecosystem.config.js
+    pm2 start ecosystem.config.js
    
     exit
 EOF
