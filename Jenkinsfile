@@ -7,12 +7,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'building'
+                sh "npm install"
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                sh 'npm install'
+                chmod 777 ./node_modules/.bin/mocha
+                chmod 777 ./script/test
+                 sh './script/test'
             }
         }
         stage('Deploy') {
@@ -20,16 +23,17 @@ pipeline {
                 echo 'Deploying....'
             }
         }
-        stage('ExecuteSonarQubeReport') {
-         steps {
-             script{
-                sh 'npm i'
-                sh 'chmod 777 ./script/sonar.sh'
-                sh 'npm run sonar'
-                
-    }
-      
-        }
+       stage("sonarqube analysis"){
+            steps{
+                nodejs(nodeJSInstallationName: 'Nodejs'){
+                    sh "npm install"
+                    withSonarQubeEnv('Sonar'){
+                    sh 'npm install sonar-scanner'
+                    sh "npm run sonar"
+                    }
+                    
+                }
+            }
         }
     }  
    }
