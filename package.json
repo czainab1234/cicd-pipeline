@@ -16,7 +16,7 @@
           "fsevents": "^2.3.2"
     },
     "devDependencies": {
-         "mocha": "^5.2.0",
+         "mocha": "^1.20.1",
          "supertest": "^3.3.0"
     }
 }
