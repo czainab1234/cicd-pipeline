@@ -1,7 +1,7 @@
 const sonarqubeScanner = require('sonarqube-scanner');
 
 sonarqubeScanner({
-  serverUrl: 'http://35.177.215.184:9000/',
+  serverUrl: 'http://18.130.220.92:9000/',
        options : {
 	    'sonar.projectDescription': 'cicd-pipeline1',
 	    'sonar.projectName': 'cicd-pipeline1',
