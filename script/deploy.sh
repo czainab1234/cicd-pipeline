@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ssh ubuntu@18.169.189.7 <<EOF
-    cd ~/node-app
+    cd ~/cicd-pipeline
     git pull origin master
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
     . ~/.nvm/nvm.sh
