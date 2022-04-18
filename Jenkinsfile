@@ -14,6 +14,8 @@ pipeline {
               steps {
                   nodejs(nodeJSInstallationName: 'Nodejs') {
                   sh "npm install"
+                  chmod 777 ./node_modules/.bin/mocha
+                  chmod 777 ./script/test.sh
                   sh "./script/test.sh"
               }
           }
