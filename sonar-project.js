@@ -6,7 +6,7 @@ sonarqubeScanner({
 	    'sonar.projectDescription': 'cicd-pipeline1',
 	    'sonar.projectName': 'cicd-pipeline1',
 	    'sonar.projectKey':'NodeJsMithunTechnologies',
-	    'sonar.login': '11a10b12255d1246e06ce36c378798c781f8990a',
+	    'sonar.login': '0672fc34ae541b4e2f72ef0ee9ffadb230223282',
 	    //'sonar.login': 'admin',
 	    //'sonar.password': 'admin',
             'sonar.projectVersion':'1.0',
