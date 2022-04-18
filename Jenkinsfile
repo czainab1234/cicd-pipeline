@@ -4,7 +4,8 @@ pipeline {
       stages {
           stage('build') {
               steps {
-                  echo 'building the software'
+                 nodejs(nodeJSInstallationName: 'Nodejs')
+                  sh "npm install"
                   
               }
           }
@@ -16,7 +17,7 @@ pipeline {
           }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo "Deploying...."
             }
         }
        stage("sonarqube analysis"){
