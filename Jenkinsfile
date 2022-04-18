@@ -13,8 +13,6 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'npm install'
-                chmod 777 ./node_modules/.bin/mocha
-                chmod 777 ./script/test
                  sh './script/test'
             }
         }
