@@ -14,7 +14,7 @@ pipeline {
               steps {
                   nodejs(nodeJSInstallationName: 'Nodejs') {
                   sh "npm install"
-                  sh "./script/test"
+                  sh "./script/test.sh"
               }
           }
           }
