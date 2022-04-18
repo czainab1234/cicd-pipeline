@@ -12,9 +12,11 @@ pipeline {
           }
           stage('test') {
               steps {
+                  nodejs(nodeJSInstallationName: 'Nodejs') {
                   sh "npm install"
                   
               }
+          }
           }
         stage('Deploy') {
             steps {
