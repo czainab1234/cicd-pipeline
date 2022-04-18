@@ -26,8 +26,9 @@ pipeline {
                   sh "npm install"
                   sh "chmod 777 ./script/deploy.sh"
                   sh "./script/deploy.sh
-                }
+                
             }
+        }
         }
        stage("sonarqube analysis"){
             steps{
