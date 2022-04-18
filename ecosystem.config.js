@@ -1,6 +1,6 @@
 module.exports = {
     apps: [{
-        name    : "node-app",
+        name    : "cicd-pipeline",
         script  : "npm",
         args    : "start"
     }]
