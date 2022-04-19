@@ -1,12 +1,12 @@
 const sonarqubeScanner = require('sonarqube-scanner');
 
 sonarqubeScanner({
-  serverUrl: 'http://18.130.220.92:9000/',
+  serverUrl: 'http://13.232.123.250:9000/',
        options : {
 	    'sonar.projectDescription': 'cicd-pipeline1',
 	    'sonar.projectName': 'cicd-pipeline1',
 	    'sonar.projectKey':'NodeJsMithunTechnologies',
-	    'sonar.login': '0672fc34ae541b4e2f72ef0ee9ffadb230223282',
+	    'sonar.login': '',da0e942a6dac21dab2f18afb1745f73b395838e6
 	    //'sonar.login': 'admin',
 	    //'sonar.password': 'admin',
             'sonar.projectVersion':'1.0',
