@@ -8,8 +8,9 @@ ssh -tt ubuntu@13.234.115.140<<EOF
     nvm install v10.11.0
     npm install
     npm install pm2 -g
+    pm2 start index.js
     
-    pm2 restart ecosystem.config.js
+   
     
     
    
