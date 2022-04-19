@@ -10,6 +10,18 @@ pipeline {
               }
           }
           }
+          
+          stage('Ok') {
+            steps {
+                echo "Ok"
+            }
+        }
+    }
+    post {
+    always {
+        emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
+    }
+}
           stage('test') {
               steps {
                   nodejs(nodeJSInstallationName: 'Nodejs') {
@@ -42,6 +54,8 @@ pipeline {
                 }
             }
         }
+          
+          
     }  
    }
 
