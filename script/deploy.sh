@@ -10,7 +10,7 @@ ssh -tt ubuntu@13.234.115.140<<EOF
     npm install pm2 -g
     pm2 start ecosystem.config.js
     pm2 restart ecosystem.config.js
-    npm run prod
+    
     
    
    
