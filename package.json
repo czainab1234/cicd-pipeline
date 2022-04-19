@@ -5,7 +5,8 @@
     "private": true,
     "scripts": {
          "start": "nodemon index.js",
-        "sonar": "node sonar-project.js"
+        "sonar": "node sonar-project.js",
+        "prod": "node index.js"
     },
     "dependencies": {
          "express": "^4.16.3",
