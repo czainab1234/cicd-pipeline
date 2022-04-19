@@ -5,7 +5,7 @@
     "private": true,
     "scripts": {
          "start": "node index.js",
-        "sonar": "sonar-scanner",
+        "sonar": "node sonar-project.js",
         "prod": "node index.js"
     },
     "dependencies": {
